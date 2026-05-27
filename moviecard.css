@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.movie-css {
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  transition-timing-function: ease-in-out;
+  transition:
+    width 1.5s,
+    height 1.5s,
+    color 1s,
+    transform 2s,
+    background-color 1s;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin: 10px;
+}
+.movie-css img {
+  border-radius: 20px;
+  margin: 20px;
+  max-width: 500px;
+  max-height: 400px;
+}
+.movie-css:hover {
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 100%;
+  color: black;
+  padding: 20px;
+  margin: 10px;
+  transform: rotate(360deg);
+}
+.movie-css form input :focus {
+  border-color: green;
+  border-radius: 10px;
+  border-width: 0px;
+}
+.movie-css img :hover {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+.responsivecolor {
+  background-color: rgb(255, 0, 0);
+  color: turquoise;
+}
+@media screen and (max-width: 700px) {
+  .responsivecolor {
+    background-color: black;
+    color: beige;
+  }
+  h1 {
+    color: rebeccapurple;
+  }
+}
+@media screen and (max-width: 500px) {
+  .responsivecolor {
+    background-color: grey;
+    color: black;
+  }
+  h1 {
+    color: green;
+  }
+}
+.advanced {
+  max-width: 2000px;
+  height: 500px;
+  text-shadow: 0 0 3px #ff0000;
+  background-image: linear-gradient(rgb(255, 248, 248), rgb(0, 0, 0));
+  border-radius: 50px;
+  padding: 20px;
+  margin: 30px;
+  font-size: 20px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.card {
+  width: 300px;
+  background-color: black;
+  color: beige;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+.item-a {
+  background-color: #ff0000;
+  grid-area: header;
+  width: 250px;
+}
+.item-b {
+  background-color: blue;
+  width: 250px;
+  grid-area: main;
+}
+.item-c {
+  background-color: darkmagenta;
+  width: 250px;
+  grid-area: sidebar;
+}
+.item-d {
+  background-color: darkgoldenrod;
+  width: 250px;
+  grid-area: footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+.item-a {
+  display: grid;
+  justify-content: center;
+}
