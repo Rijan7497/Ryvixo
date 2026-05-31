@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  background-image: url(nepali.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.hero-1 {
+  background-image: url(first.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.hero-2 {
+  background-image: url(second.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.des h1 {
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+.des {
+  height: 300px;
+  color: black;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transform: translateY(-80%);
+}

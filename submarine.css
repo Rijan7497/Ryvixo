@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-image: url(coral.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.submarine {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 28s;
+  animation-fill-mode: forwards;
+}
+@keyframes myAnimation {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 1200px;
+    top: 0;
+  }
+}
